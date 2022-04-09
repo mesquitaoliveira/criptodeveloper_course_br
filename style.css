@@ -31,36 +31,30 @@ label .logo {
 }
 nav ul {
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
   justify-content: space-between;
   background-color: #34495e;
-  border-radius: 30px;
-  float: right;
-  margin-right: 20px;
+  border-radius: 38px;
+  margin-left: auto;
 }
 nav ul li {
   display: inline-block;
-  line-height: 60px;
-  margin: 3px 40px 3px 6px;
+  line-height: 15px;
+  margin: 6px;
 }
 nav ul li a {
+  display: inline-block;
   color: #fff;
   padding: 18px 36px;
   border-radius: 27px;
-  font-size: 16px;
+  font-size: 18px;
   text-transform: uppercase;
+  text-align: center;
 }
-a:nth-child(1) {
-  width: 100px;
+nav ul li a .material-icons {
+  font-size: 18px;
 }
-a:nth-child(2) {
-  width: 100px;
-}
-a:nth-child(3) {
-  width: 110px;
-}
+
 a.active,
 a:hover {
   background: #fff;
@@ -83,14 +77,9 @@ a:hover {
       rgba(65, 184, 131, 0.7570378493194152) 100%
     ),
     url(./assets/playlist_background.png);
-  /* background: linear-gradient(
-    90deg,
-    rgba(65, 184, 131, 1) 0%,
-    rgba(52, 73, 94, 1) 100%,
-    rgba(65, 184, 131, 1) 100%
-  ); */
   object-fit: cover;
   padding: 16px 56px;
+  width: 100%;
 }
 .description {
   display: flex;
@@ -140,6 +129,7 @@ h2 {
 .course_list p {
   color: #808080;
   text-align: left;
+  max-width: fit-content;
 }
 .journey_cards {
   padding-top: 40px;
